@@ -13,6 +13,9 @@
 		601CF0EC2328024A00780117 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF0EB2328024A00780117 /* User.swift */; };
 		601CF0EE2328033500780117 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF0ED2328033500780117 /* Photo.swift */; };
 		601CF0F02328039200780117 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF0EF2328039200780117 /* Review.swift */; };
+		601CF0F323280F4200780117 /* ZomatoRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF0F123280F4200780117 /* ZomatoRestaurantCell.swift */; };
+		601CF0F423280F4200780117 /* ZomatoRestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601CF0F223280F4200780117 /* ZomatoRestaurantCell.xib */; };
+		601CF0F6232813BA00780117 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF0F5232813BA00780117 /* Search.swift */; };
 		60D3C8262323E1B9007E27A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D3C8252323E1B9007E27A2 /* AppDelegate.swift */; };
 		60D3C8282323E1B9007E27A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D3C8272323E1B9007E27A2 /* ViewController.swift */; };
 		60D3C82B2323E1B9007E27A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D3C8292323E1B9007E27A2 /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 		601CF0EB2328024A00780117 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		601CF0ED2328033500780117 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		601CF0EF2328039200780117 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		601CF0F123280F4200780117 /* ZomatoRestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZomatoRestaurantCell.swift; path = ZomatoSearch/Models/ZomatoRestaurantCell.swift; sourceTree = SOURCE_ROOT; };
+		601CF0F223280F4200780117 /* ZomatoRestaurantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ZomatoRestaurantCell.xib; path = ZomatoSearch/Models/ZomatoRestaurantCell.xib; sourceTree = SOURCE_ROOT; };
+		601CF0F5232813BA00780117 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		60D3C8222323E1B9007E27A2 /* ZomatoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZomatoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D3C8252323E1B9007E27A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60D3C8272323E1B9007E27A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 				601CF0EB2328024A00780117 /* User.swift */,
 				601CF0ED2328033500780117 /* Photo.swift */,
 				601CF0EF2328039200780117 /* Review.swift */,
+				601CF0F5232813BA00780117 /* Search.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -71,6 +78,8 @@
 		603E499723269EF200DBE624 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				601CF0F123280F4200780117 /* ZomatoRestaurantCell.swift */,
+				601CF0F223280F4200780117 /* ZomatoRestaurantCell.xib */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601CF0F423280F4200780117 /* ZomatoRestaurantCell.xib in Resources */,
 				60D3C8302323E1BA007E27A2 /* LaunchScreen.storyboard in Resources */,
 				60D3C82D2323E1BA007E27A2 /* Assets.xcassets in Resources */,
 				60D3C82B2323E1B9007E27A2 /* Main.storyboard in Resources */,
@@ -186,11 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				601CF0EE2328033500780117 /* Photo.swift in Sources */,
+				601CF0F323280F4200780117 /* ZomatoRestaurantCell.swift in Sources */,
 				601CF0F02328039200780117 /* Review.swift in Sources */,
 				601CF0E82327EFDA00780117 /* Restaurant.swift in Sources */,
 				60D3C8282323E1B9007E27A2 /* ViewController.swift in Sources */,
 				601CF0EC2328024A00780117 /* User.swift in Sources */,
 				601CF0EA2328023600780117 /* Location.swift in Sources */,
+				601CF0F6232813BA00780117 /* Search.swift in Sources */,
 				60D3C8262323E1B9007E27A2 /* AppDelegate.swift in Sources */,
 				601CF0E62327EC7E00780117 /* City.swift in Sources */,
 			);
