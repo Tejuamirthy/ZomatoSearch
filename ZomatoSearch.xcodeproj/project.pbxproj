@@ -21,6 +21,7 @@
 		60D3C82B2323E1B9007E27A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D3C8292323E1B9007E27A2 /* Main.storyboard */; };
 		60D3C82D2323E1BA007E27A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D3C82C2323E1BA007E27A2 /* Assets.xcassets */; };
 		60D3C8302323E1BA007E27A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D3C82E2323E1BA007E27A2 /* LaunchScreen.storyboard */; };
+		60DE08F4232D257000594408 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DE08F3232D257000594408 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		60D3C82C2323E1BA007E27A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60D3C82F2323E1BA007E27A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60D3C8312323E1BA007E27A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DE08F3232D257000594408 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ZomatoSearch/Dependencies/Carthage/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DE08F4232D257000594408 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,7 @@
 			children = (
 				60D3C8242323E1B9007E27A2 /* ZomatoSearch */,
 				60D3C8232323E1B9007E27A2 /* Products */,
+				60DE08F2232D257000594408 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 			path = ZomatoSearch;
 			sourceTree = "<group>";
 		};
+		60DE08F2232D257000594408 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60DE08F3232D257000594408 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +145,7 @@
 				60D3C81E2323E1B9007E27A2 /* Sources */,
 				60D3C81F2323E1B9007E27A2 /* Frameworks */,
 				60D3C8202323E1B9007E27A2 /* Resources */,
+				60DE08F5232D257B00594408 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -189,6 +202,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60DE08F5232D257B00594408 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Dependencies/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60D3C81E2323E1B9007E27A2 /* Sources */ = {
@@ -354,6 +388,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM69XM3DP7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZomatoSearch/Dependencies/Carthage/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ZomatoSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,6 +410,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM69XM3DP7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZomatoSearch/Dependencies/Carthage/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ZomatoSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

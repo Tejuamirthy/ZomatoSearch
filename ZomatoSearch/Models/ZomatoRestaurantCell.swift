@@ -13,6 +13,8 @@ class ZomatoRestaurantCell: UITableViewCell {
     @IBOutlet weak var restaurantTitle: UIView!
     @IBOutlet weak var ratingColor: UIView!
     @IBOutlet weak var ratingValue: UILabel!
+    @IBOutlet weak var localityVerbose: UILabel!
+    @IBOutlet weak var foodCuisines: UILabel!
     
     
     override func awakeFromNib() {
