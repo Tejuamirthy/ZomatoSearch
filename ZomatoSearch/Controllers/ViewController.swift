@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        /// TODO design Interactors and make a centralised networking calling seperately using Alamofire to make request easily
+        
         let urlString = "https://developers.zomato.com/api/v2.1/search?entity_id=6"
         guard let url = URL(string: urlString) else { return }
         var urlRequest = URLRequest(url: url)

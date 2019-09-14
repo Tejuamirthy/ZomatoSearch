@@ -10,6 +10,7 @@ import UIKit
 
 class ZomatoRestaurantCell: UITableViewCell {
 
+    /// TODO all the constraints to be set for the cell
     @IBOutlet weak var restaurantTitle: UIView!
     @IBOutlet weak var ratingColor: UIView!
     @IBOutlet weak var ratingValue: UILabel!
